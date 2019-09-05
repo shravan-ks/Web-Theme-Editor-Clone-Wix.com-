@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from crud.models import crud
 from theme1.forms import CreateTh1, Th1_console
 from theme1.models import theme1
 

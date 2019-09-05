@@ -20,7 +20,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('crud.urls')),
     path('', include('theme1.urls')),
     path('', include('core.urls')),
     path('', include('restaurant.urls')),

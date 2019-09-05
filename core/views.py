@@ -6,7 +6,6 @@ from django.shortcuts import render, redirect
 from Company.models import CompanyDb
 from core.forms import updateprofile
 from core.models import notification
-from crud.models import crud
 from restaurant.models import RestDb
 from resume.models import resumeDb
 from theme1.models import theme1
