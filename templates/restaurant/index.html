@@ -1,0 +1,420 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Responsive meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- IE Compatibility meta -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Description meta -->
+        <meta name="description" content="...">
+        <!-- Author meta -->
+        <meta name="author" content="Bootstrap Temple">
+
+        <!-- Page Title -->
+        <title>Italiano Restaurant - Bootstrap Template from the Bootstrap Temple</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{% static 'restaurant/img/favicon.ico'  %}">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet"  href="{% static 'restaurant/css/bootstrap.min.css'  %}">
+        <!-- Custom font icons -->
+        <link rel="stylesheet" href="https://file.myfontastic.com/6AeAYiqp5KBjSiZ2tE8WJW/icons.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Slider -->
+        <link rel="stylesheet" href="{% static 'restaurant/css/slider.min.css'  %}">
+        <!-- Lightbox Pop up -->
+        <link rel="stylesheet" href="{% static 'restaurant/css/lightbox.min.css'  %} ">
+        <!-- Datepicker -->
+        <link rel="stylesheet"  href="{% static 'restaurant/css/datepicker.min.css'  %} " >
+        <!-- Datepicker -->
+        <link rel="stylesheet"  href="{% static 'restaurant/css/timepicki.min.css'  %}" >
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="{% static 'restaurant/css/owl.carousel.min.css'  %}" >
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{% static 'restaurant/css/style.default.css'  %}" >
+        <!-- Modernizr -->
+        <script type="text/javascript"  src="{% static 'restaurant/js/modernizr.custom.79639.min.js' %}"></script>
+    </head>
+    <body>
+
+        <div class="page-holder">
+            <!-- Navbar -->
+            <header class="header">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="{% static "restaurant/img/logo.png" %}" alt="Italiano" width="100"></a>
+                            <div class="navbar-buttons">
+                                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
+                            </div>
+                        </div>
+                        <div id="navigation" class="collapse navbar-collapse navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#hero">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#events">Find us</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header><!-- End Navbar -->
+
+
+
+            <!-- Hero Section -->
+            <section id="hero" class="hero">
+                <div id="slider" class="sl-slider-wrapper">
+
+                    <div class="sl-slider">
+                        <!-- slide -->
+                        <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                            <div class="sl-slide-inner" style="background-image: url({% static 'restaurant/img/hero-bg.jpg' %});">
+                                <div class="container">
+                                    <h2>This is <span class="text-primary">Italiano restaurant</span></h2>
+                                    <h1>Bootstrap Template</h1>
+                                    <p>An elegant Bootstrap template brought to you by <a href="https://bootstraptemple.com/" target="_blank">Bootstrap Temple</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide -->
+                        <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                            <div class="sl-slide-inner" style="background-image: url({% static 'restaurant/img/hero-bg02.jpg' %});">
+                                <div class="container">
+                                    <h1>lorem ipsum dolor sit amit</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide -->
+                        <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+                            <div class="sl-slide-inner" style="background-image: url({% static 'restaurant/img/hero-bg03.jpg' %});">
+                                <div class="container">
+                                    <h2>Visit <span class="text-primary">italiano restaurant</span></h2>
+                                    <h1>lorem ipsum dolor sit amit</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End sl-slider -->
+
+                    <!-- slider pagination -->
+                    <nav id="nav-dots" class="nav-dots">
+                        <span class="nav-dot-current"></span>
+                        <span></span>
+                        <span></span>
+                    </nav>
+
+                    <!-- scroll down btn -->
+                    <a id="scroll-down" href="#about" class="hidden-xs"></a>
+
+                    <!-- social icons menu -->
+                    <div class="social">
+                        <div class="wrapper">
+                            <ul class="list-unstyled">
+                                <li><a href="#" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" title="pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#" title="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                            <span>Follow us on</span>
+                        </div>
+                    </div>
+                </div><!-- End slider-wrapper -->
+            </section><!-- End Hero Section -->
+
+
+
+            <!-- Details -->
+            <section id="details" class="details">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="heading text-center">
+                                <p>Call Us Now For</p>
+                                <h5>Home Delivery</h5>
+                            </div>
+                            <a href="tel:9870988764" class="phone">987 098 8764</a>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="heading text-center">
+                                <p>Check Our Clients'</p>
+                                <h5>Rating &amp; Reviews</h5>
+                            </div>
+                            <a href="#" class="reviews btn-unique"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Details-->
+
+
+            <!-- About Section -->
+            <section id="about" class="about">
+                <div class="container text-center">
+                    <header>
+                        <h2>About Restaurant</h2>
+                        <h3>Check our story</h3>
+                    </header>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</p>
+                </div>
+            </section>
+            <!-- End About Section -->
+
+
+            <!-- Services Section -->
+            <section id="services" class="services">
+                <div class="container text-center">
+                    <header>
+                        <h2>We provide the following</h2>
+                        <h3>Our Specialities</h3>
+                    </header>
+
+                    <div class="row">
+                        <!-- item -->
+                        <div class="col-sm-4 service">
+                            <div class="icon">
+                                <i class="icon-like"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Clean Environment</h4>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="col-sm-4 service">
+                            <div class="icon">
+                                <i class="icon-hat"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Lovely &amp; expert chefs</h4>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="col-sm-4 service">
+                            <div class="icon">
+                                <i class="icon-plate"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Fresh and tasty food</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Services Section -->
+
+
+            <!-- App Section -->
+
+            <section id="app" class="app" style="padding-bottom: 150px;">
+                <div class="container text-center has-border">
+                    <h5>Download Menu to known more about our Dishes and exciting offers </h5>
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="#" target="_blank" class="btn-unique-white" download>Menu</a></li>
+                        </ul>
+                </div>
+            </section>
+            <!-- End App Section -->
+
+
+            <!-- Events Section -->
+            <!-- Gallery Section -->
+            <section id="gallery" class="gallery">
+                <div class="container text-center">
+                    <header>
+                        <h2>Our Gallery</h2>
+                        <h3>Discover the photo gallery</h3>
+                    </header>
+
+                    <div class="gellery">
+                        <div class="row">
+                            <!-- Item -->
+                            <div class="col-md-3 col-sm-4 col-xs-6 col-xs-6 col-custom-12">
+                                <div class="item">
+                                    <img src="{% static 'restaurant/img/bg01-small.jpg' %}" alt="image">
+                                    <a href="{% static 'restaurant/img/bg01-small.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                        <span class="icon-search"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                                <div class="item">
+                                    <img src="{% static 'restaurant/img/bg02-small.jpg' %}" alt="image">
+                                    <a href="{% static 'restaurant/img/bg02-small.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                        <span class="icon-search"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                                <div class="item">
+                                    <img src="{% static 'restaurant/img/bg03-small.jpg' %}" alt="image">
+                                    <a href="{% static 'restaurant/img/bg03-small.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                        <span class="icon-search"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                                <div class="item">
+                                    <img src="{% static 'restaurant/img/bg-small.jpg' %}" alt="image">
+                                    <a href="{% static 'restaurant/img/bg-small.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                        <span class="icon-search"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Gallery Section -->
+
+
+            <!-- Events Section -->
+            <section id="events" class="events" style="padding-bottom: 100px;">
+                <div class="container">
+                    <header class="text-center">
+                        <h2>Find Us</h2>
+                        <h3>Follow Google maps</h3>
+                    </header>
+                    <div class="row">
+                        <!-- Profile Side  -->
+                        <div class="col-sm-6">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7062243270384!2d77.55108366482155!3d12.926593590885439!2m3!1f0!2f
+                                0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e2e3674922d%3A0x9c6dbb786db092bf!2sRing+Road+Hospital!5e0!3m2!1sen!2sin!4v1557214859
+                                725!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+
+                        <!-- Details Side  -->
+                        <div class="col-sm-6" >
+                            <div class="details" style="height: 450px">
+                                <h3>Italiono</h3>
+                                <h4 class="text-primary">Phone Number : 9999999</h4>
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos quae sapiente voluptates! Deleniti, eius, error eum illum maiores nobis numquam officiis pariatur quasi repudiandae sapiente suscipit temporibus, velit. Natus?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Events Section -->
+
+
+            <!-- End Booking Section -->
+            <section id="contact" class="contact" style="height: 800px;">
+                <div class="container text-center">
+                    <div class="form-holder">
+                        <header>
+                            <h2>Contact Us</h2>
+                            <h3>Feel free to contact us</h3>
+                        </header>
+
+                        <form method="get" action="#" id="contact-form">
+                            <div class="row">
+                                <label for="user-name" class="col-sm-6 unique">Name
+                                    <input type="text" name="username" id="user-name" required>
+                                </label>
+                                <label for="user-email" class="col-sm-6 unique">Email
+                                    <input type="email" name="useremail" id="user-email" required>
+                                </label>
+                                <label for="message" class="col-sm-12 unique">Your Message
+                                    <textarea name="message" id="message" required></textarea>
+                                </label>
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn-unique" id="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- End Booking Section -->
+
+
+            <!-- Footer -->
+            <footer id="mainFooter" class="mainFooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 brief">
+                            <div class="header">
+                                <img src="{% static 'restaurant/img/logo-footer.png' %}" alt="italiano" width="100">
+                            </div>
+                            <ul class="social list-unstyled list-inline" >
+                                <p style="color: whitesmoke; margin-bottom: 10px;">Follow Us</p>
+                                <li><a href="#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" target="_blank" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#" target="_blank" title="Skype"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 contact col-md-push-4">
+                            <div class="header">
+                                <h6>Contact</h6>
+                            </div>
+                            <ul class="contact list-unstyled">
+                                <li><a href="mailto:Italiano@Company.com"><span class="icon-phone text-primary"></span>Italiano@Company.com</a></li>
+                                <li><span class="icon-mail text-primary"></span>9465 7675 294</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="copyrights">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href="#">Policy Privacy</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-7">
+                                <p>&copy; 2017 Italiano Restaurant. Template By <a href="#" target="_blank">You Web</a></p>
+                                <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+
+            <!-- scroll top btn -->
+            <div id="scrollTop" class="btn-unique">
+                <i class="fa fa-angle-up"></i>
+            </div><!-- end scroll top btn -->
+
+
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="{% static 'restaurant/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'restaurant/js/jquery.ba-cond.min.js' %}"></script>
+        <script src="{% static 'restaurant/js/jquery.slitslider.min.js' %}" ></script>
+        <script src="{% static 'restaurant/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'restaurant/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'restaurant/js/datepicker.min.js' %}"></script>
+        <script src="{% static 'restaurant/js/datepicker.en.min.js' %}"></script>
+        <script src="{% static 'restaurant/js/timepicki.min.js' %}"></script>
+        <script src="{% static 'restaurant/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'restaurant/js/smooth.scroll.min.js' %}"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0dSWcBx-VghzhzQB6oCMTgeXMOhCYTvk"></script>
+        <script src="{% static 'restaurant/js/map.min.js' %}"></script>
+        <script src="{% static 'restaurant/js/script.js' %}"></script>
+    </body>
+</html>

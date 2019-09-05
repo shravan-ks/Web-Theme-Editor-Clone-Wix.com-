@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for theme in list_Th %}
+        <a href="{% url 'view_theme1' theme.id %}">
+            <li>{{ theme.projectname }}</li>
+        </a>
+    {% endfor %}
+    
+{% endblock %}

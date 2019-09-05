@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="col-lg-12  text-center" style="padding-top: 25%;">
+                <form method="POST">
+                    {% csrf_token %}
+                    <h2 style="padding-bottom: 25px;">Are you u want detail your Project :{{ theme_delete.projectname }}</h2>
+                    <button class="btn btn-danger" type="submit">Confirm</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

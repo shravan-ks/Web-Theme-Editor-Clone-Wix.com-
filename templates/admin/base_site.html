@@ -1,0 +1,29 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}You Web | Admin{%  endblock %}
+
+{% block branding %}
+<h1 id="site-name">You Web</h1>
+{% endblock %}
+{% block extrahead %}
+    <style type="text/css">
+        #header #branding h1{
+                background: None;
+            color: whitesmoke;
+        }
+        #header {
+            background-color: black;
+        }
+    .submit-row input{
+        background-color: black;
+    }
+    .submit-row input:hover{
+        background-color: orangered;
+        color: whitesmoke;
+    }
+    caption {
+        background-color: #505152 !important;
+    }
+    </style>
+{% endblock %}

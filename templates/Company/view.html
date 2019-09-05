@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% for theme in theme_view %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>{{ theme.Brand_Name }}</title>
+    <!-- Bootstrap -->
+    <link href="{%  static 'Company/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'Company/css/styles.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+  </head>
+  <body style="{{ theme.Accent_Color }}">
+    {% if theme.Background_Color_Navbar %}
+        <nav class="navbar navbar-default" style="margin: 0; border:0; border-radius: 0px; background-color: {{ theme.Background_Color_Navbar }} ; color: black!important; padding: 10px;">
+    {% else %}
+        <nav class="navbar navbar-default" style="margin: 0; border:0; background-color: #dee7ec; color: black!important; padding: 5px;">
+    {% endif %}
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          {% if theme.Brand_Logo %}
+                <img alt="{{ theme.Brand_Name }}" class="img img-responsive" style="width: auto; height: 50px;"  src="{{ theme.Brand_Logo.url }}">
+          {% else %}
+                <a class="navbar-brand" href="#">{{ theme.Brand_Name }}</a>
+          {% endif %}
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid" style="padding: 0;">
+      <div class="row" style="padding: 0; margin: 0;background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);">
+        <div class="container" style="padding: 50px;">
+          <div class="col-lg-8 ">
+            <h2>{{ theme.Banner_Heading }}</h2>
+            <p>{{ theme.Banner_Text }}</p>
+            <!-- <button class="btn btn-primary">Get Started</button> -->
+            <h3 style="padding-top: 20px;">Follow us &nbsp&nbsp
+              {% if theme.Facebook %}
+                <a href="{{ theme.Facebook }}" style="color: darkblue !important;"><i class="fab fa-facebook"></i></a>&nbsp&nbsp
+              {% endif %}
+              {% if theme.Instagram %}
+                <a href="{{ theme.Instagram }}"style="color: darkblue !important;"><i class="fab fa-instagram"></i></a>&nbsp&nbsp
+              {% endif %}
+              {% if theme.Twitter %}
+                <a href="{{ theme.Twitter }}"style="color: darkblue !important;"><i class="fab fa-twitter"></i></a>&nbsp&nbsp
+              {% endif %}
+            </h3>
+          </div>
+          <div class="col-lg-4">
+            <img src="{% static 'Company/img/1020-[Converted].png' %}" alt="" class="img img-responsive">
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding: 0; margin: 0;background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); padding: 50px;">
+          <div class="container">
+            <div class="col-lg-4">
+              <img src="{% static 'Company/img/4098-[Converted].png' %}" style="width: 250px; height: 250px;" alt="" class="img img-responsive">
+            </div>
+            <div class="col-lg-8">
+              <h1>Our Services</h1>
+              <p style="font-size: 18px; padding-top: 10px;">
+                <ul style="font-size: 18px;">
+                  {{ theme.Our_Services|safe }}
+                </ul>
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="row" style="padding: 0; margin: 0;background: #6190E8; background: linear-gradient(to right, #A7BFE8, #6190E8);padding: 50px;">
+          <div class="container">
+            <div class="col-lg-8">
+              <h1>About Us</h1>
+              <p style="font-size: 18px; padding-top: 10px;">
+                {{ theme.About_Us }}
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <img src="{% static 'Company/img/sss.png' %}" style="width: 250px; height: 250px;" alt="" class="img img-responsive">
+            </div>
+          </div>
+      </div>
+      <div class="row" style="padding: 0; margin: 0;background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); padding: 25px;">
+          <div class="container text-center">
+            <p>Copyright © 2019 {{ theme.Brand_Name }} - All Rights Reserved</p>
+              <p>Designed by Youweb</p>
+          </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'Company/js/bootstrap.min.js' %}"></script>
+  </body>
+{% endfor %}
+</html>

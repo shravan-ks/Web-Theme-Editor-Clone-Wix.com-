@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+{% load qr_tags %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="container">
+        <h2>Settings/Tools  </h2>
+        <div class="row">
+             <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">General & SEO</a></li>
+                <li><a data-toggle="tab" href="#menu3">Qr Code</a></li>
+             </ul>
+             <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                  <h2>General Settings And Search Engine Optimization</h2>
+                   <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <h3>Qr code</h3>
+
+                    {% for foo in theme_view %}
+                        {% qr_from_contact contacts "size" %}
+                    {% endfor %}
+
+                </div>
+             </div>
+         </div>
+    </div>
+{% endblock %}

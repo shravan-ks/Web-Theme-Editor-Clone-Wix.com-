@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="db" uuid="021bc7de-a3f6-41e7-881c-37b583bc4ece">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>SQLite</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\ShravaN\PycharmProjects\web_demo\db.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/sqlite-jdbc-3.25.1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="db [2]" uuid="6f63e92d-b615-4856-bdf7-ab0d440682bb">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>SQLite</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\ShravaN\PycharmProjects\web_demo\db.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/sqlite-jdbc-3.25.1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="db [3]" uuid="dd4e45ac-310a-4a2e-8c1b-850f8b5bac8b">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>SQLite</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\ShravaN\PycharmProjects\web_demo\db.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/sqlite-jdbc-3.25.1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>

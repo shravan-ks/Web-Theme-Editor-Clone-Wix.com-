@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% for theme in theme_view %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>{{ theme.Profile_Name  }}| Resume</title>
+    <!-- Bootstrap -->
+    <link href="{%  static 'resume/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'resume/css/styles.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" >
+  </head>
+  <body style="color: {{ theme.Accent_Color }}">
+    <div class="container-fluid" style="padding: 0px;">
+      {% if theme.Background_Color_Left_Column %}
+        <div class="col-lg-3" style="background-color: {{ theme.Background_Color_Left_Column }}; height: 100vh; ">
+      {% else %}
+        <div class="col-lg-3" style="background-color: gold; height: 100vh; ">
+      {% endif %}
+        <div class="col-lg-12">
+          <div class="row" style="padding-top: 45%;">
+            <div class="col-lg-8 col-lg-push-2 col-xs-8 col-xs-push-2">
+              {% if theme.Profile_Picture %}
+                <img src="{{ theme.Profile_Picture.url }}" class="img img-responsive img-thumbnail img-circle" alt="">
+              {% else %}
+                  <img src="{% static 'resume/img/profile.jpg' %}" class="img img-responsive img-thumbnail img-circle" alt="">
+              {% endif %}
+            </div>
+          </div>
+          <div class="row text-center">
+            <h2>{{ theme.Profile_Name }}</h2>
+          </div>
+          <div class="row text-center" style="padding-top: 20px;">
+            <h3>Follow Me </h3>
+          </div>
+          <div class="row text-center">
+            <p style="font-size: 25px; ">
+              {% if theme.Facebook %}
+                <a href="{{ theme.Facebook }}" target="_blank" style="color: black !important;"><i class="fab fa-facebook"></i></a>&nbsp&nbsp
+              {% endif %}
+              {% if theme.Instagram %}
+                <a href="{{ theme.Instagram }}" target="_blank"style="color: black !important;"><i class="fab fa-instagram"></i></a>&nbsp&nbsp
+              {% endif %}
+              {% if theme.Twitter %}
+                  <a href="{{ theme.Twitter }}" target="_blank"style="color: black !important;"><i class="fab fa-twitter"></i></a>&nbsp&nbsp
+              {% endif %}
+              {% if theme.GitHub %}
+                    <a href="{{ theme.GitHub }}" target="_blank"style="color: black !important;"><i class="fab fa-github"></i></a>&nbsp&nbsp
+              {% endif %}
+            </p>
+          </div>
+          <div class="row" style="padding-top: 30px;">
+            <div class="col-lg-6 col-lg-push-3 text-center">
+              {% if theme.Upload_Resumne %}
+                    <a href="{{ theme.Upload_Resumne.url }}" style="background-color: black; border: 0; padding-right: 25px;padding-left: 25px; padding-top: 10px; padding-bottom: 10px;" class="btn btn-info " download><i class="fas fa-download"></i>&nbsp&nbsp  Resume</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% if theme.Background_Color_Right_Column %}
+        <div class="col-lg-9" style="background-color: {{ theme.Background_Color_Right_Column }}; height: 100vh;">
+      {% else %}
+          <div class="col-lg-9">
+      {% endif %}
+        <div class="row">
+          <div class="col-lg-12" style="padding-top: 25px;">
+            <h1>Hello, I am {{ theme.Profile_Name }}</h1>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-10">
+              <h2>ABOUT ME </h2>
+              <p>{{ theme.About_Me }}</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-10">
+              <h2 >SKILLS </h2>
+              <ul style="font-size: 18px;padding-top: 10px;">
+               <p>
+                   {{ theme.Skills|safe }}
+               </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-10">
+              <h2>EXPERIENCE </h2>
+              <ul style="font-size: 18px;padding-top: 10px;">
+                 <p>
+                   {{ theme.Experience|safe  }}
+               </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-10">
+              <h2>CONTACT ME !</h2>
+              <div class="col-lg-12">
+                {% if theme.Phone_Number %}
+                    <h4>Phone : {{ theme.Phone_Number }}</h4>
+                {% endif %}
+                {% if theme.Email %}
+                    <h4>Email: <a href="{{ theme.Email }}">{{ theme.Email }}</a></h4>
+                {% endif %}
+                {% if theme.Address %}
+                   <h4>Address: {{ theme.Address }}</h4>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'resume/js/bootstrap.min.js' %}"></script>
+  </body>
+{% endfor %}
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="django" name="Django">
+      <configuration>
+        <option name="rootFolder" value="$MODULE_DIR$" />
+        <option name="settingsModule" value="web_demo/settings.py" />
+        <option name="manageScript" value="$MODULE_DIR$/manage.py" />
+        <option name="environment" value="&lt;map/&gt;" />
+        <option name="doNotUseTestRunner" value="false" />
+        <option name="trackFilePattern" value="migrations" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/ven" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/venvs" />
+      <excludeFolder url="file://$MODULE_DIR$/venvw" />
+      <excludeFolder url="file://$MODULE_DIR$/venw" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.7 (venv)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+  </component>
+  <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="C:\Users\ShravaN\PycharmProjects\web_demo\requirements.txt" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Django" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/../web_demo\templates" />
+      </list>
+    </option>
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>

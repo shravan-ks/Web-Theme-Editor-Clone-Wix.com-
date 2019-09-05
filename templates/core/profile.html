@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="container">
+        <div class="col-lg-12">
+            <h1>Profile <span style="font-size: 20px;">(update your profile)</span></h1>
+            <div class="col-lg-6 col-lg-push-3" style="padding-top: 25px;">
+                 {% for profile in pros %}
+                    {% if profile.username == user.username %}
+                        <form method="POST">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <button class="btn btn-info" style="margin-top: 15px;" type="submit">Confirm</button>
+                        </form>
+                        <h4 style="padding-top: 15px;"><a href="{% url 'account_change_password' %}">Reset / Change your password</a></h4>
+                    {% else %}
+                        <h2>Seems like this is not your Account!! </h2>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    <h2>Are you u want detail {{ crud_del.name }}</h2>
+    <button type="submit">Confirm</button>
+</form>
+</body>
+</html>

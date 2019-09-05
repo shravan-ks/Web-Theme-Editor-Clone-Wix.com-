@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hi Crud !!!</h1>
+    <h3><a href="{% url 'create_crud' %}">NEW</a></h3>
+        {% for crud in cruds %}
+            <tr>
+                <td>{{ crud.name }}</td>
+                <td><a href="{% url 'update_crud' crud.id %}">Edit</a></td>
+                <td><a href="{% url 'delete_crud' crud.id %}">Delete</a></td>
+            </tr><br>
+        {% endfor %}
+
+
+</body>
+</html>

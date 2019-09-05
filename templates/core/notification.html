@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% block content %}
+        <div class="container">
+            <div class="row" style="padding-bottom: 10px;">
+                <h1>Notifications</h1>
+            </div>
+            {% for notify in notify %}
+                <div class="col-lg-12 theme-list-col"  style="margin-bottom: 20px;">
+                <div class="col-lg-3">
+                    <img src="{{ notify.image.url }}" class="img img-responsive" alt="">
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <h3 style="margin-top: 5px;">{{ notify.title }}</h3>
+                    </div>
+                    <div class="row" style="padding-bottom: 25px;">
+                        <p>{{ notify.body }}</p>
+                    </div>
+                    <div class="row">
+                       <div class="col-lg-6 col-sm-6">
+                            <a href="{{ notify.link }}">Click here</a>
+                       </div>
+                         <div class="col-lg-6 col-sm-6">
+                            <p class="text-right" style="margin: 0;">{{ notify.date }}</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+{% endblock %}

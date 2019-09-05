@@ -1,0 +1,102 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <h1>Search Themes here ...</h1>
+        <div class="row theme-list-row" >
+            <div class="col-lg-12 theme-list-com">
+                <div class="col-lg-12 theme-list-col">
+                    <div class="col-lg-3 theme-list-color">
+                        <img src="https://d3uzz33g1d6j2w.cloudfront.net/img/pages/fe-thumb/italiano-900x600_b9db795e6f953cf2a178ed8122a04f94.jpg" class="img-responsive"  alt="">
+                    </div>
+                    <div class="col-lg-9">
+                        <h3 style="letter-spacing: 1px; color: whitesmoke; margin-top: 10px;">Restaurant Theme</h3>
+                        <p style="letter-spacing: 1px;">Restaurant Them is an elegant free restaurant. Built on YouWeb Engine, uses Bootsrap 3.3.7 ,
+                            HTML, CSS and Javascript Bootstrap HTML template that comes with a variety
+                            of useful page elements that will enable you that create a classy restaurant website really fast. </p>
+                        <div class="row theme-list-btn-row">
+                            <button class="btn btn-primary btn-theme-list-view"><a style="text-decoration: none; color: whitesmoke" href="{% url 'restaurant:index' %}">View</a></button>
+                            <button class="btn btn-primary btn-theme-list-edit"><a style="text-decoration: none; color: whitesmoke" href="{% url 'restaurant:create' %}">Edit</a></button>
+                        </div>
+                    </div>
+{#                    <div class="col-lg-2">#}
+{#                        <div class="panel panel-default user-rate-panel" style="margin: 0px;">#}
+{#                          <div class="panel-heading"><h4 class="text-center" style="margin: 0px;color: black ">User Rating's</h4></div>#}
+{#                          <div class="panel-body">#}
+{#                            <h4 class="text-center" style="padding-top: 7px;"><i class="fas fa-star" style="color: gold"></i>#}
+{#                                <i class="fas fa-star" style="color: gold"></i>#}
+{#                                <i class="fas fa-star" style="color: gold"></i>#}
+{#                                <i class="fas fa-star" style="color: gold"></i><i class="fas fa-star"></i></h4>#}
+{#                            <h4 class="text-center" style="padding-top: 15px;">Very Good</h4>#}
+{#                          </div>#}
+{#                        </div>#}
+{#                    </div>#}
+                </div>
+            </div>
+        </div>
+        <div class="row theme-list-row" >
+            <div class="col-lg-12 theme-list-com">
+                <div class="col-lg-12 theme-list-col">
+                    <div class="col-lg-3 theme-list-color">
+                        <img src="{%  static 'resume/img/sample.jpg'  %}" style="height: " class="img-responsive"  alt="">
+                    </div>
+                    <div class="col-lg-9">
+                        <h3 style="letter-spacing: 1px; color: whitesmoke; margin-top: 10px;">Resume Theme</h3>
+                        <p style="letter-spacing: 1px;">Resume Theme is beautiful Theme built for resumes and Portfalio. Built on YouWeb Engine, uses Bootsrap 3.3.7 ,
+                            HTML, CSS and Javascript. Bootstrap HTML template that comes with a variety of useful page elements that will enable you that create a classy restaurant website really fast.  </p>
+                        <div class="row theme-list-btn-row">
+                            <button class="btn btn-primary btn-theme-list-view"><a style="text-decoration: none; color: whitesmoke" href="{% url 'resume:index' %}">View</a></button>
+                            <button class="btn btn-primary btn-theme-list-edit"><a style="text-decoration: none; color: whitesmoke" href="{% url 'resume:create' %}">Edit</a></button>
+                        </div>
+                    </div>
+{#                    <div class="col-lg-2">#}
+{#                        <div class="panel panel-default user-rate-panel" style="margin: 0px;">#}
+{#                          <div class="panel-heading"><h4 class="text-center" style="margin: 0px;color: black ">User Rating's</h4></div>#}
+{#                          <div class="panel-body">#}
+{#                            <h4 class="text-center" style="padding-top: 7px;"><i class="fas fa-star" style="color: gold"></i>#}
+{#                                <i class="fas fa-star" style="color: gold"></i>#}
+{#                                <i class="fas fa-star" style="color: gold"></i>#}
+{#                                <i class="fas fa-star" style="color: gold"></i><i class="fas fa-star" style="color: gold"></i></h4>#}
+{#                            <h4 class="text-center" style="padding-top: 15px;">Very Good</h4>#}
+{#                          </div>#}
+{#                        </div>#}
+{#                    </div>#}
+                </div>
+            </div>
+        </div>
+        <div class="row theme-list-row" >
+            <div class="col-lg-12 theme-list-com">
+                <div class="col-lg-12 theme-list-col">
+                    <div class="col-lg-3 theme-list-color">
+                        <img src="{%  static 'Company/img/th4.jpg'  %}" class="img-responsive"  alt="">
+                    </div>
+                    <div class="col-lg-9">
+                        <h3 style="letter-spacing: 1px; color: whitesmoke; margin-top: 10px;">Company Theme</h3>
+                        <p style="letter-spacing: 1px;">Company Theme is beautiful Theme built for Small Startups and Small Scale Company. Built on YouWeb Engine, uses Bootsrap 3.3.7 ,
+                            HTML, CSS and Javascript. Bootstrap HTML template that comes with a variety of useful page elements that will enable you that create a classy restaurant website really fast.  </p>
+                        <div class="row theme-list-btn-row">
+                            <button class="btn btn-primary btn-theme-list-view"><a style="text-decoration: none; color: whitesmoke" href="{% url 'company:index' %}">View</a></button>
+                            <button class="btn btn-primary btn-theme-list-edit"><a style="text-decoration: none; color: whitesmoke" href="{% url 'company:create' %}">Edit</a></button>
+                        </div>
+                    </div>
+{#                    <div class="col-lg-2">#}
+{#                        <div class="panel panel-default user-rate-panel" style="margin: 0px;">#}
+{#                          <div class="panel-heading"><h4 class="text-center" style="margin: 0px;color: black ">User Rating's</h4></div>#}
+{#                          <div class="panel-body">#}
+{#                            <h4 class="text-center" style="padding-top: 7px;"><i class="fas fa-star" style="color: gold"></i>#}
+{#                                <i class="fas fa-star" style="color: gold"></i>#}
+{#                                <i class="fas fa-star" style="color: gold"></i>#}
+{#                                <i class="fas fa-star" style="color: gold"></i><i class="fas fa-star" style="color: gold"></i></h4>#}
+{#                            <h4 class="text-center" style="padding-top: 15px;">Very Good</h4>#}
+{#                          </div>#}
+{#                        </div>#}
+{#                    </div>#}
+                </div>
+            </div>
+        </div>
+        <div class="row text-center" style="padding-top: 50px;">
+            <a class=" btn btn-success"    href="{% url 'feedback:feedback' %}"> Request a Theme </a>
+        </div>
+    </div>
+
+{% endblock %}
