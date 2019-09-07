@@ -26,6 +26,7 @@ SECRET_KEY = 'r!)+6jtr2ajrdyc(w%y%@ogqnpa8s(#^1#rsnbvdujnm4^iita'
 DEBUG = False
 
 ALLOWED_HOSTS = ['157.245.98.232']
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -168,7 +169,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
