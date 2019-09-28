@@ -12,6 +12,6 @@ This is simple Web Theme Editor Like Wix.com. Built with Python and Django. Wher
   * `Create A Super user: python manage.py createsuperuser`
   * `To Run:python manage.py runserver`
  
-Enjoy ! 😀
+Enjoy ! 😀<br>
 Happy Coding !👨🏻‍💻
     
