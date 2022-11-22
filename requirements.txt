@@ -12,7 +12,7 @@ gunicorn==19.9.0
 idna==2.8
 oauthlib==3.0.2
 packaging==16.8
-Pillow==6.0.0
+Pillow==9.3.0
 psycopg2-binary==2.8.3
 pyparsing==2.1.10
 python3-openid==3.1.0
